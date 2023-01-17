@@ -37,6 +37,10 @@ body {
 
 }
 
+.card-img-sec {
+    display: none;
+}
+
 .name {
     padding-bottom: 3rem;
     text-transform: uppercase;
@@ -49,9 +53,6 @@ body {
     padding-right: 3rem;
     font-size: 2rem;
     font-family: 'Fraunces', serif;
-
-
-
 }
 
 .product-description {
@@ -67,17 +68,19 @@ body {
     align-items: center;
 }
 
-.price{
+.price {
     font-size: 2rem;
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
 }
-.old-price{
+
+.old-price {
     color: hsl(228, 12%, 48%);
 
 }
 
-.card-btn{
+.card-btn {
+    font-family: 'Montserrat', sans-serif;
     padding: 1rem 4rem;
     text-align: center;
     display: flex;
@@ -88,6 +91,58 @@ body {
     color: white;
     margin: 1.5rem auto 0 .9rem;
 }
-.cart-icon{
+
+.cart-icon {
     margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:688px) {
+
+    #card {
+        flex-direction: column;
+        width: 22rem;
+
+    }
+
+    .card-img {
+        display: none;
+        height: 30rem;
+
+
+    }
+
+    .card-img-sec {
+        display: flex;
+        width: 22rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+    }
+
+    .name {
+        padding-bottom: .8rem;
+    }
+
+    .product-name {
+        padding-bottom: .8rem;
+        padding-right: 1rem;
+    }
+
+    .card-details {
+        padding: 0 1rem;
+    }
+
+    .product-description {
+        padding-right: .5rem;
+        padding-bottom: .9rem;
+        font-size: 15px;
+    }
+    .card-btn {
+        padding: 1rem 6rem;
+        margin: 1.5rem auto 1.6rem .9rem;
+    }
+    
+
 }
